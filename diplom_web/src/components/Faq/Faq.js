@@ -1,37 +1,37 @@
-import './Faq.scss';
-import FaqCard from './FaqCard/FaqCard';
+import "./Faq.scss";
+import FaqCard from "./FaqCard/FaqCard";
 
 const Faq = () => {
   const faqData = [
     {
       id: 1,
-      summary: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-      text: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Possimus modi ipsum explicabo, ducimus repellendus odit voluptatibus odio reprehenderit sapiente neque ab rem accusamus doloribus, laudantium deleniti beatae molestias quasi minus.",
+      summary: "Как узнать примерную стоимость конструкций?",
+      text: "Оставьте заявку на сайте, после мы договоримся о бесплатном замере и расчёте стоимости работ.",
     },
     {
       id: 2,
-      summary: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-      text: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Possimus modi ipsum explicabo, ducimus repellendus odit voluptatibus odio reprehenderit sapiente neque ab rem accusamus doloribus, laudantium deleniti beatae molestias quasi minus.",
+      summary: "Вывозите ли вы за собой мусор?",
+      text: "Да, мы вывозим весь строительный  мусор с объекта.",
     },
     {
       id: 3,
-      summary: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-      text: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Possimus modi ipsum explicabo, ducimus repellendus odit voluptatibus odio reprehenderit sapiente neque ab rem accusamus doloribus, laudantium deleniti beatae molestias quasi minus.",
+      summary: "Есть ли гарантия?",
+      text: "Мы предоставляем 1 год бесплатного гарантийного обслуживания.",
     },
     {
       id: 4,
-      summary: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-      text: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Possimus modi ipsum explicabo, ducimus repellendus odit voluptatibus odio reprehenderit sapiente neque ab rem accusamus doloribus, laudantium deleniti beatae molestias quasi minus.",
+      summary: "В каких регионах работаете?",
+      text: "Работаем в северо-западном федеральном округе, центральном федеральном округе, южном федеральном округе.",
     },
-  ]
+  ];
   return (
-  <section class="faq wrap" id="faq">
-    <h2 class="headers-h2">Часто задаваемые вопросы</h2>
-    {faqData.map(cardData => (
+    <section class="faq wrap" id="faq">
+      <h2 class="headers-h2">Часто задаваемые вопросы</h2>
+      {faqData.map((cardData) => (
         <FaqCard key={cardData.id} cardData={cardData} />
-      ))}  
-  </section>
-  )
-}
+      ))}
+    </section>
+  );
+};
 
 export default Faq;
