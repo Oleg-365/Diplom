@@ -48,7 +48,7 @@ const Header = () => {
           <ul>
             <li>
               <Link to={{ pathname: "/", hash: "#about" }} onClick={closeMenu}>
-                О нас
+                Главная
               </Link>
             </li>
             <li>
